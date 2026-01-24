@@ -3657,7 +3657,7 @@ fieldset:disabled .btn {
 .navbar {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
@@ -3680,7 +3680,11 @@ fieldset:disabled .btn {
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
-  white-space: nowrap;
+}
+@media screen and (min-width: 575px) {
+  .navbar-brand {
+    white-space: nowrap;
+  }
 }
 .navbar-nav {
   display: flex;
