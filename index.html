@@ -357,7 +357,8 @@
     </div>
     <!-- About End -->
 
-
+<div id="my-gallery" style="max-width:80%;margin:auto">
+</div>
 
     <!-- Facts Start -->
     <!-- <div
@@ -604,8 +605,7 @@
     </div>
     <!-- Service End -->
 
-    <div id="my-gallery" style="max-width:80%;margin:auto">
-</div>
+    
 
             <!-- Quote Start -->
     <div
@@ -1077,9 +1077,11 @@
     <script type="text/javascript">  
 const myGallery= cloudinary.galleryWidget({
   container: "#my-gallery",
-  cloudName: "demo",
+  cloudName: "dcmlljv4l",
   mediaAssets: [
-    {tag: "gald"}, // by default mediaType: "image"
+    {tag: "gald", mediaType: "image",}, 
+    {tag: "gald", mediaType: "video",}, 
+    // by default mediaType: "image"
   ]
 });
 
