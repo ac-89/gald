@@ -38,6 +38,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://product-gallery.cloudinary.com/latest/all.js" type="text/javascript">
+</script>  
   </head>
 
   <body>
@@ -297,7 +299,7 @@
             <img
               class="img-fluid rounded"
               data-wow-delay="0.1s"
-              src="img/about.jpg"
+              src="img/about-1.jpg"
             />
           </div>
           <div class="col-lg-8 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -601,6 +603,9 @@
       </div>
     </div>
     <!-- Service End -->
+
+    <div id="my-gallery" style="max-width:80%;margin:auto">
+</div>
 
             <!-- Quote Start -->
     <div
@@ -1069,6 +1074,17 @@
     <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script type="text/javascript">  
+const myGallery= cloudinary.galleryWidget({
+  container: "#my-gallery",
+  cloudName: "demo",
+  mediaAssets: [
+    {tag: "gald"}, // by default mediaType: "image"
+  ]
+});
+
+myGallery.render();
+</script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
